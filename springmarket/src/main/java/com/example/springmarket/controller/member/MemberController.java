@@ -193,7 +193,6 @@ public class MemberController {
 	}
 	@PostMapping("member/check.do")
 	public ResponseEntity<Map<String, String>> check(@RequestParam(name = "userid") String userid) {
-		// TODO: 비밀번호 변경 로직 수행
 		String count = "";
 		if (userid == "") {
 			count = "false";
